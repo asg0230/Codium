@@ -11,12 +11,19 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
+        header a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+header a:focus {
+    outline: 2px solid white;
+}
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -35,13 +42,13 @@
 </head>
 <body>
     <header>
-        <h1>Home</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <h1>Home</h1>
+    <nav>
+        <a href="#" aria-label="Home">Home</a>
+        <a href="#" aria-label="Products">Products</a>
+        <a href="#" aria-label="Contact">Contact</a>
+    </nav>
+</header>
     <div class="container">
         <h2>Featured Nike Clothing Products</h2>
         <div class="product">
